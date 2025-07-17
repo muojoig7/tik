@@ -132,8 +132,7 @@ def check_linked(email):
 				'x-ladon': m["x-ladon"]}
               try:
                   url="https://api16-normal-c-alisg.tiktokv.com/passport/email/bind_without_verify/?passport-sdk-version=0&app_language=en&"
-                  res = requests.post(url, params=params, headers=headers,data={"email":email},cookies=cookies).text
-                  if 'Email is linked to another account. Unlink or try another email.'in res:print(res)
+                  res = requests.post(url, params=params, headers=headers,data={"email":email},cookies=cookies).text;print(res)
               except Exception as e:print(e)
               
 check_linked(email)                      
