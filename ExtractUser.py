@@ -2,7 +2,6 @@ import requests, SignerPy, json, secrets, uuid, binascii, os, time, random
 def xor(string):
   return "".join([hex(ord(c) ^ 5)[2:] for c in string])
 secret = secrets.token_hex(16)
-es=input("enter email :")
 xor_email=xor(es)
 params = {
     "request_tag_from": "h5",
@@ -225,6 +224,7 @@ except:
     pass
 #s1 code write and my other name is نترو و لمام نترو ونترو لتصليح سبالات وطبخ باجة ونترو لتصليح سبالات وطبخ باجة لزراشدتي و نترو زردشتي
 #Join My Channel : https://t.me/python3_Tool
+
 
 
 
