@@ -40,7 +40,6 @@ list=[]
 cok=[]
 ttwids=[]
 msTokens=[]
-email='myjoker323@gmail.com'
 def check_linked(email):
               hash_list = [
                   "cafe66f2ae8a76f077cbd626ea86df79",
